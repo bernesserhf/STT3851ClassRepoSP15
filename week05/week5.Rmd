@@ -15,10 +15,9 @@ output: html_document
 
 * Complete you peer grading evaluations for the **Research Plan Assignment** NLT 5 PM February 13.
 
-* Complete you peer grading evaluations for the **Research Plan Assignment** NLT 5 PM February 13.
-* Submit via [http://www.crowdgrader.org](http://www.crowdgrader.org) the **Data Management Assignment** NLT 5 PM February 13. Directions: Select three secondary categorical variables from the data set you are using.  Recode your data to create factors with appropriate labels.  Create a barplot for each of your factors and write a sentence or two explaining each barplot.  Show all `R` code used to manage and create your barplots by using `R` code chunks in your `*.Rmd` file.  Submit the resulting `*.html` file to crowdgrader.
+* Submit via [http://www.crowdgrader.org](http://www.crowdgrader.org) the **Data Management Assignment** NLT 5 PM February 20. Directions: Select three secondary categorical variables from the data set you are using.  Recode your data to create factors with appropriate labels.  Create a barplot for each of your factors and write a sentence or two explaining each barplot.  Show all `R` code used to manage and create your barplots by using `R` code chunks in your `*.Rmd` file.  Submit the resulting `*.html` file to crowdgrader.
 The direct link for the **Data Management Assignment** is [http://www.crowdgrader.org/crowdgrader/venues/view_venue/805](http://www.crowdgrader.org/crowdgrader/venues/view_venue/805).   
 
 * Watch [Interactions and Nonlinearity video](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16 min).
 
-* Complete Linear Regression Lab Section 3.6 ISLR.
+* Complete Linear Regression Lab Section 3.6 ISLR and place it in your private repo.
