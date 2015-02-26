@@ -58,7 +58,7 @@ library(ggplot2)
 ggplot(data = Boston, aes(x = lstat, y = medv)) +
   geom_point() + 
   theme_bw() + 
-  stat_smooth(method = "lm")
+  stat_smooth(method = "lm")  #"lm" stands for linear model (straight line)#
 ```
 
 ## Two Independent Variables
@@ -90,6 +90,7 @@ s3d$points3d(x = Boston$lstat, y = Boston$rm,
               z = Boston$medv,
              col = c("darkblue", "lightblue3")[i.negpos],
              pch = 20)
+#all models are wrong!  Some are just useful or less wrong!  XD  #
 ```
 
 ## More Graphs Again
@@ -103,6 +104,17 @@ par(mfrow=c(1, 1))
 ## Forward and Backward Selection
 
 The functions `add1` and `update` can be used to create a model with forward selection.
+
+Backwards:
+Largest pvalue is the least significant.
+Can look at t value or overal f ratio, a large p value will correspond with a small t value.
+Itterative process (keep doing it)
+Want the fewest varirables to explain the model
+
+Forwards:
+Starts with nothing but average, then test to see which variable is the most significant, gives the most info.
+
+choose(5,2)  (Combinations)
 
 ```{r ForwardSelection}
 SCOPE <- (~ . + crim + zn + indus + chas + nox + rm + age + dis + rad + tax + ptratio + black + lstat)
