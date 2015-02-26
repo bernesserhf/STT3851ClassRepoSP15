@@ -1,0 +1,60 @@
+---
+title: "2/24/15"
+author: "(>^-^)>"
+date: "Tuesday, February 24, 2015"
+output: html_document
+---
+#Histograms#
+```{r}
+library(MASS)
+?quine
+
+hist(quine$Days)
+with(data=quine, hist(Days))
+
+library(ggplot2)
+ggplot(data=quine, aes(x=Days))+
+  geom_histogram(fill="green",color="black")+
+  theme_bw()+
+  facet_grid(Age~.)
+
+ggplot(data=quine, aes(x=Days))+
+  geom_histogram(fill="violetred",color="black")+
+  theme_bw()+
+  facet_grid(Age~Sex)
+
+ggplot(data=quine, aes(x=Days))+
+  geom_density(fill="seagreen2",color="black")+
+  theme_bw()+
+  facet_grid(Age~Sex)
+
+#Three S's 
+#Shape - unimodal, skewed to the right
+#Center - median for skewed, mean for symetric
+#Spread - If appropriate for center is median then for spread it would be IQR (Interquartile range).  SYmetric you would us standard deviation.
+```
+
+
+#Scatter Plots#
+```{r}
+library(car)
+library(MASS)
+str(Boston)
+?Boston
+plot(Boston)
+
+plot(Boston$medv~Boston$lstat)
+par(mfrow=c(1,2))  #1 row two columns
+plot(medv~lstat,data=Boston,col="purple", pch=19, cex=.25)
+plot(medv~rm,data=Boston, col="blue", pch=19, cex=.25)
+par(mfrow=c(1,1)) #back to normal, 1 row one column
+
+cor(Boston) #correlation coeficcients 
+cor(Boston$medv, Boston$lstat)
+cor(Boston$medv, Boston$rm)
+
+#mod1<-lm(y~x, data = DF) ,general formula
+mod1<-lm(medv~lstat, data=Boston)
+mod1
+summary(mod1)
+pt(-1.12,504)

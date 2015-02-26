@@ -1,0 +1,13 @@
+---
+title: "Something"
+author: "Holly Bernesser"
+date: "Tuesday, January 27, 2015"
+output: html_document
+bibliography: KCV.bib
+---
+
+@gleser_estimating_1976 said stuff.
+@arnholt_estimating_1995 said other stuff.
+@searls_utilization_1964 said even more stuff.
+
+# References

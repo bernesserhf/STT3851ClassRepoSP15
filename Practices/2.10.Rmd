@@ -1,0 +1,25 @@
+---
+title: "2.10 Practice"
+author: "(>^-^)>"
+date: "Tuesday, February 10, 2015"
+output: html_document
+---
+
+```{r}
+library(MASS)
+library(ggplot2)
+library(dplyr)
+str(quine)
+qu <- quine %>%
+filter(Eth=="A" & Sex=="F"& Age=="F0" & Days>5)
+qu
+
+qt <- quine %>%
+filter(Eth!="A" & Sex=="M" & Age=="F0" & Days==0)
+qt
+
+qb <- quine %>%
+filter(Eth!="A" & Sex=="M" & Lrn =="AL")
+qb
+mean(qb$Days)
+```

@@ -35,6 +35,14 @@ summary(simple.lm)
 anova(simple.lm)
 ```
 
+# P value
+```{r}
+pt(1.32, 47, lower = FALSE)*2 
+#Default is area to the left
+#(lower = false is the area to the right)
+(1-pt(1.32, 47))*2
+```
+
 ## Basic Regression Plots
 
 ```{r}
