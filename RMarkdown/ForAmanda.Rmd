@@ -1,0 +1,10 @@
+---
+title: "For Amanda"
+author: "Joe Texer"
+date: "March 17, 2015"
+output: html_document
+---
+
+$$E(X)= \mu_X = \sum x \times p(x) $$
+$$V(X)=\sigma^2_X$$
+$$V(\bar{X}) = \sigma^2_{\bar{X}} = E[(X - \mu_X)^2] = \sum(x - \mu_x)^2p(\bar{x})$$
