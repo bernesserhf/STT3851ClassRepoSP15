@@ -1,6 +1,6 @@
 ---
-title: "For Amanda"
-author: "Joe TeXer"
+title: "Mean and Variance of Random Variables"
+author: "Alan Arnholt"
 date: "March 17, 2015"
 output: html_document
 ---
